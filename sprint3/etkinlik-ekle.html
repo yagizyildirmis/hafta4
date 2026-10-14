@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kampüs Etkinlikleri — Etkinlik Ekle</title>
+  <link rel="stylesheet" href="css/2416501007.css">
+  <script type="module" src="js/event-form.js"></script>
+</head>
+<body>
+
+  <header class="site-baslik">
+    <h1>Etkinlik Ekle</h1>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="etkinlikler.html">Etkinlikler</a></li>
+      <li><a href="etkinlik-ekle.html" aria-current="page">Ekle</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p class="bilgi">Yıldızlı (*) alanlar zorunludur. Bu sprintte form veri kaydetmez.</p>
+
+    <form class="form" id="etkinlik-formu" novalidate>
+      <p class="alan">
+        <label for="ad">Etkinlik Adı *</label>
+        <input type="text" id="ad" name="ad" maxlength="80" placeholder="Örn. Kariyer Günleri 2026" required aria-describedby="ad-hata">
+        <span class="alan-hata" id="ad-hata"></span>
+      </p>
+
+      <p class="alan">
+        <label for="kategori">Kategori *</label>
+        <select id="kategori" name="kategori" required aria-describedby="kategori-hata">
+          <option value="">Seçiniz</option>
+          <option value="Seminer">Seminer</option>
+          <option value="Atölye">Atölye</option>
+          <option value="Söyleşi">Söyleşi</option>
+          <option value="Yarışma">Yarışma</option>
+        </select>
+        <span class="alan-hata" id="kategori-hata"></span>
+      </p>
+
+      <p class="alan">
+        <label for="tarih">Tarih *</label>
+        <input type="date" id="tarih" name="tarih" required aria-describedby="tarih-hata">
+        <span class="alan-hata" id="tarih-hata"></span>
+      </p>
+
+      <p class="alan">
+        <label for="saat">Saat *</label>
+        <input type="time" id="saat" name="saat" required aria-describedby="saat-hata">
+        <span class="alan-hata" id="saat-hata"></span>
+      </p>
+
+      <p class="alan">
+        <label for="yer">Yer *</label>
+        <input type="text" id="yer" name="yer" maxlength="80" placeholder="Örn. A Blok Konferans Salonu" required aria-describedby="yer-hata">
+        <span class="alan-hata" id="yer-hata"></span>
+      </p>
+
+      <p class="alan">
+        <label for="kontenjan">Kontenjan</label>
+        <input type="number" id="kontenjan" name="kontenjan" min="1" max="1000" aria-describedby="kontenjan-hata">
+        <span class="alan-hata" id="kontenjan-hata"></span>
+      </p>
+
+      <p class="alan">
+        <label for="aciklama">Açıklama</label>
+        <textarea id="aciklama" name="aciklama" rows="5"></textarea>
+      </p>
+
+      <p class="form-butonlar">
+        <button type="submit" class="buton">Kaydet</button>
+      </p>
+
+      <div id="form-mesaj" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer>
+    <p>Yağız Yıldırmış &middot; 2416501007 &middot; 2026</p>
+  </footer>
+
+</body>
+</html>

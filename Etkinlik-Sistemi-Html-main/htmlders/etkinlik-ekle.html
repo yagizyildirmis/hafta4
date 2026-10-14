@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Yeni Etkinlik Ekle</h1>
+    <form>
+      <label for="ad">Etkinlik Adı: </label>
+      <input type="text" id="ad" name="ad" required />
+    </form>
+    <form>
+      <label for="tarih">Etkinlik Tarihi: </label>
+      <input type="date" id="tarih" name="tarih" required />
+    </form>
+    <form>
+      <label for="saat">Saat: </label>
+      <input type="time" id="saat" name="saat" required />
+    </form>
+    <form>
+      <label for="yer">Yer: </label>
+      <input type="text" id="yer" name="yer" required />
+    </form>
+    <label for="kategori">Kategori:</label>
+    <select name="kategori" id="kategori" required>
+      <option value="">Seçiniz</option>
+      <option value="seminer">Seminer</option>
+      <option value="atölye">Atölye</option>
+      <option value="konferans">Konferans</option>
+    </select>
+    <button type="" submit>Etkinlik Ekle</button>
+    <a href="index.html">Geri Dön</a>
+  </body>
+</html>
